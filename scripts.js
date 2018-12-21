@@ -58,17 +58,17 @@ $('.hit-button').click(()=>{
     if(oneDeal>0){
         // grab the next card in the deck 
 
-        if(calculateTotal(playerHand,'player') <=21){
         
         const topCard = theDeck.shift();
         // push it onto the players Hand
         playerHand.push(topCard)
         placeCard('player',playerHand.length,topCard)
-        calculateTotal(playerHand, 'player')   
-        }else{
-           
+        calculateTotal(playerHand, 'player')  
+        if (calculateTotal(playerHand, 'player') > 21 ) {
             checkWin();
         }
+       
+        
     } else{
         swal("Slow down...you gotta Deal first.")
     }
@@ -81,14 +81,14 @@ $('.hit-button').click(()=>{
 $('.stand-button').click(()=>{
     if(oneDeal>0){
         let dealersTotal = calculateTotal(dealerHand,'dealer');
-        while (dealersTotal <17){
+
+            while (dealersTotal <17){
             const topCard = theDeck.shift();
             dealerHand.push(topCard);
             placeCard('dealer',dealerHand.length,topCard);
             dealersTotal = calculateTotal(dealerHand,'dealer');
-        }
-        checkWin();
-        
+            } checkWin();
+    
     }else{
         swal("Slow down...you gotta Deal first.")
     }
