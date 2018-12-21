@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Black(Lab)Jack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Pacifico" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+
+    
+</head>
+<body>
+
+
+    <div class="container">
+            
+            <div class="title">BlackJack</div>
+            <div class="avatarAlign">
+                <span class="playerAvatar"></span> <span class= "playerNamePlace">Player</span> <span class= "playerNameScore">0</span>
+                <span class="dealerAvatar"></span> <span class= "dealerNamePlace">Dealer</span> <span class= "dealerNameScore">0</span>
+            </div>
+    
+            <div class="table">
+                    <div class="player-total">0</div>
+                    <div class="playerCardHolder">
+                        <div class= "card card-1"></div>
+                        <div class= "card card-2"></div>
+                        <div class= "card card-3"></div>
+                        <div class= "card card-4"></div>
+                        <div class= "card card-5"></div>
+                        <div class= "card card-6"></div>
+                    </div>
+                    <div class="gameOver scale"></div>
+                    
+                    <div class="dealer-total">0</div>
+                    <div class="dealerCardHolder">
+                        <div class= "card card-1"></div>
+                        <div class= "card card-2"></div>
+                        <div class= "card card-3"></div>
+                        <div class= "card card-4"></div>
+                        <div class= "card card-5"></div>
+                        <div class= "card card-6"></div>
+                    </div>
+                    
+                    <div class="buttons">
+                        <button class="deal-button">Deal</button>
+                        <button class="hit-button">Hit</button>
+                        <button class="stand-button">Stand</button>
+                    </div>
+                    <div class="gameOverButton">
+                        <button class="continueButton">Play Again?</button>
+                    </div>
+                    
+                    
+          
+            </div>
+            
+    </div>
+    
+    <!-- jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <!-- Smart Alerts -->
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <!-- My JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
