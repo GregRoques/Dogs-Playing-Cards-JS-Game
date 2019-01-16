@@ -87,7 +87,9 @@ $('.stand-button').click(()=>{
             dealerHand.push(topCard);
             placeCard('dealer',dealerHand.length,topCard);
             dealersTotal = calculateTotal(dealerHand,'dealer');
-            } checkWin();
+            }
+                checkWin();
+            
     
     }else{
         swal("Slow down...you gotta Deal first.")
@@ -144,7 +146,7 @@ function checkWin(){
     }
     // 4. If dealerHand.length == 2 AND dealersTotal == 21... BLACKJACK
 
-    else if (dealerHand.length ==2 && dealersTotal ==21){
+    else if (dealerHand.length ==2 && dealerTotal ==21){
         dealerScore++;
         document.querySelector(`.dealerNameScore`).innerHTML = `${dealerScore}`;
 
