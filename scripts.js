@@ -312,7 +312,7 @@ function shuffleDeck(aDeckToBeShuffled){
         
             
             document.querySelector(`.gameOver`).innerHTML = ``;
-            document.querySelector(`.gameOver`).style = `transform: scale(0);`;
+            document.querySelector(`.gameOver`).style = `transform: scale(1);`;
             $(`.buttons`).show()
             $('.continueButton').hide()
            
