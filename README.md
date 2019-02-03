@@ -1,5 +1,3 @@
-# Black (Lab) Jacl
-
 ## Contents
 * Description
 * Features
@@ -126,8 +124,8 @@ Use Open Weather Map API to import the weather for a specific location.
 Make screen size responsive.
 
 ## Authors
-* Greg Roques
- - [GitHub Profile](https://github.com/GregRoques)
+- Greg Roques
+   - [GitHub Profile](https://github.com/GregRoques)
 
 
 ## Screenshots
