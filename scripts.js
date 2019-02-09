@@ -329,3 +329,12 @@ function shuffleDeck(aDeckToBeShuffled){
 
         })
     }
+// ========================================================================= Window Resize
+
+window.addEventListener('resize', function() {
+    if (window.innerWidth < 1200){
+        let x = (window.innerWidth/1200)
+        document.querySelector('body').style = `transform: scale(${x}); transform-origin: top left; margin:0px`
+        console.log(x)
+    }
+  });
