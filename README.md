@@ -117,7 +117,7 @@ function placeCard(who,where,what){
 ```
 
 ## MVP
-Use Open Weather Map API to import the weather for a specific location.
+Make playable game with user scores.
 
 
 ## Future Goals
